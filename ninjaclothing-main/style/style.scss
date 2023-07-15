@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --data-color-primary: #ffffff;
+    --data-color-secondary: #272727;
+    --data-color-accent: #026BF9;
+    --data-color-shade-one: #E0EDFF;
+    --data-color-text-shade: #535252;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Montserrat;
+}
+
+body {
+    background-color: var(--data-color-primary);
+    color: var(--data-color-secondary);
+    font-family: Montserrat;
+}
+
+a {
+    cursor: pointer;
+}
+
+.bluebar {
+    background-color: var(--data-color-accent);
+    color: var(--data-color-primary);
+}
+
+.wrapper {
+    width: 1320px;
+    max-width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.blueTxt {
+    color: var(--data-color-accent);
+}
+
+// Typography and Buttons
+
+.heading {
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 78px;
+}
+
+.subHeading {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 39px;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.btn {
+    width: 130px;
+    height: 34px;
+    padding: 0.4em 1.4em;
+    font-size: 14px;
+    border-radius: 4px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--data-color-accent);
+    color: var(--data-color-primary);
+}
+
+// Main Code
+
+.firstSection,
+.fifthSection,
+.eigthSection {
+    background-color: var(--data-color-shade-one);
+}
+
+.mainImg,
+.jumpsuit,
+.outdoorjacket {
+    width: 32rem;
+}
+
+.content {
+    width: 780px;
+}
+
+.cardOne {
+    background-color: var(--data-color-primary);
+    box-shadow: 1px 4px 7px 1px rgba(2, 107, 249, 0.16);
+    border-radius: 10px;
+    width: 220px;
+    height: auto;
+
+    img {
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+.cardsInfo {
+    padding: 1em;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.cardThree img{
+    display: inline-block;
+}
+.threeDots {
+
+    .dot:nth-child(1) {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: var(--data-color-accent);
+    }
+
+    .dot:nth-child(2),
+    .dot:nth-child(3) {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: var(--data-color-shade-one);
+    }
+}
+
+.labels {
+    font-weight: 500;
+
+    .label:nth-child(1) {
+        color: var(--data-color-accent);
+    }
+}
+
+.cardTwo {
+    width: 340px;
+    height: auto;
+
+    img {
+        border-radius: 10px;
+    }
+}
+
+.cardThree {
+    background-color: var(--data-color-primary);
+    box-shadow: 1px 4px 7px 1px rgba(2, 107, 249, 0.16);
+    border-radius: 10px;
+}
+
+
+.cardFour {
+    width: 360px;
+    height: 220px;
+    background-color: var(--data-color-shade-one);
+    border-radius: 10px;
+    padding: 1em 1em 0em 1em;
+}
+
+.cardFifth img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cardBlogs {
+    background-color: var(--data-color-primary);
+    box-shadow: 1px 4px 7px 1px rgba(2, 107, 249, 0.16);
+    border-radius: 10px;
+}
+
+footer {
+    background-color: var(--data-color-secondary);
+    color: var(--data-color-primary);
+}
+
+.input {
+    border-radius: 4px;
+    background: none;
+    border: 1px solid var(--data-color-primary);
+    color: var(--data-color-primary);
+}
+
+.footerList li {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    // Typography and Buttons
+    .heading {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .subHeading {
+        font-size: 20px;
+        line-height: 39px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        line-height: 32px;
+    }
+
+    .mainImg,
+    .jumpsuit,
+    .outdoorjacket {
+        width: 26rem;
+    }
+
+    .content {
+        width: 560px;
+    }
+    .bluebar p{
+        font-size: 12px;
+    }
+}
+
+.menu span{
+    display: none;
+}
+@media only screen and (max-width: 1030px) {
+    .cardOne{
+        width: 180px;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .content{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .mainImg,
+    .jumpsuit,
+    .outdoorjacket {
+        width: 24rem;
+        margin: 0 auto;
+    }
+    .bluebar{
+        display: none;
+    }
+    // Typography and Buttons
+    .heading {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .subHeading {
+        font-size: 18px;
+        line-height: 39px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        line-height: 32px;
+        padding: 10px;
+    }
+
+    .cardThree{
+        width: 180px;
+        p{
+            font-size: 12px;
+        }
+    }
+    .cardFifth img{
+        width: 120px;
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
